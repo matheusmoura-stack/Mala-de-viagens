@@ -23,18 +23,14 @@ form.addEventListener("submit", (evento) => {
 
     if (existe) {
         itemAtual.id = existe.id
-
         atualizaElemento(itemAtual)
-        
+        itens[itens.findIndex(elemento => elemento.id === existe.id)] = itemAtual;
 //Refatoração da condicional if else, atualizando um id para cada item
-        itens[itens.findIndex(elemento => elemento.id === existe.id)] = itemAtual
     } else {
-        itemAtual.id = itens[itens.length -1] ? (itens[itens.length-1]).id + 1 : 0;
-
+        itemAtual.id = Date.now();
         criaElemento(itemAtual)
-
         itens.push(itemAtual)
-    }
+    };
 
     localStorage.setItem("itens", JSON.stringify(itens))
 
