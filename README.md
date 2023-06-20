@@ -3,7 +3,7 @@
 
 Um projeto em JavaScript desenvolvido como parte do curso da Alura, onde treino o armazenamento de dados utilizando o Visual Studio Code como meu editor de código principal. O projeto utiliza HTML, CSS e JavaScript para criar uma aplicação simples, porém funcional, de armazenamento de dados em uma "mala de viagens".
 
-🚧 **Em Andamento** 🚧
+✅ **Concluído** ✅
 
 ## Funcionalidades
 
